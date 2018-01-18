@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header,
+footer {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.66);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+
+:hover header,
+:hover footer {
+  opacity: 1;
+}
+
+header {
+  top: 0;
+}
+
+header > p {
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  padding: 5px;
+}
+
+button,
+a {
+  outline: 0;
+}
+
+button {
+  border: 0;
+  -webkit-appearance: button;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  margin: 0;
+  margin-right: 5px;
+  background-color: #e60025;
+  border-radius: 100%;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}
+
+svg {
+  fill: white;
+}
+
+[data-state="playing"] #play,
+[data-state="paused"] #pause {
+  display: none;
+}
+
+#title {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}

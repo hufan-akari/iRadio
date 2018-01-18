@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "iRadio",
+  "description": "私人FM",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "assets/icon.png",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "48": "assets/icon.png"
+  },
+  "permissions": ["http://music.163.com/"],
+
+  "background": {
+    "scripts": ["audio.js"]
+  }
+}

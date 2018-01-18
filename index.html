@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>iRadio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="prefetch" id="prefetch_image" as="image">
+</head>
+
+<body>
+  <header>
+    <p>
+      <a id="title" target="_blank"></a>
+    </p>
+    <p>
+      <span id="artist"></span>
+      <span> - </span>
+      <span id="album"></span>
+    </p>
+  </header>
+  <footer>
+    <section>
+      <button id="toggle_play" title="paused" data-state="paused">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path id="play" d="M8 5v14l11-7z" />
+          <path id="pause" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+
+      </button>
+      <button id="next" title="skip">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" />
+          <path d="M0 0h24v24H0z" fill="none" />
+        </svg>
+      </button>
+    </section>
+    <section>
+      <span id="currentTime"></span>
+      <span> / </span>
+      <span id="duration"></span>
+    </section>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
